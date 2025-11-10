@@ -1,0 +1,33 @@
+# data/
+data:
+  root_dir: "../data"
+  batch_size: 2
+  num_workers: 4
+  img_size: 1248
+
+# model/
+model:
+  name: "../dinov3-vitl16-pretrain-sat493m"
+  num_classes: 16
+  learning_rate: 0.0001
+  optimizer: "AdamW"
+  lr_scheduler: "CosineAnnealingLR"
+  loss_function: "DiceFocalLoss"
+
+  decoder:
+    type: "MultiLevel"
+
+    params:
+      multi_level_layers: [1, 16, -1]
+      fusion_channels: 512
+
+
+# trainer/
+trainer:
+  devices: "auto"       # "auto", [0, 1], 1, or 1 for CPU
+  accelerator: "auto"   # "auto", "gpu", "cpu"
+  strategy: "ddp"       # "ddp" for multi-gpu, "auto" for single-gpu/cpu
+  max_epochs: 150
+  precision: "16-mixed"
+  log_every_n_steps: 10
+  checkpoint_path: "checkpoints3"

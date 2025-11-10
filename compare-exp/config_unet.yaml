@@ -1,0 +1,26 @@
+# data/
+data:
+  root_dir: "../data"
+  batch_size: 2
+  num_workers: 4
+  img_size: 1248
+
+# model/
+model:
+  arch: "Unet"
+  encoder_name: 'resnet50'
+  num_classes: 16
+  learning_rate: 0.0001
+  optimizer: "AdamW"
+  lr_scheduler: "CosineAnnealingLR"
+
+
+# trainer/
+trainer:
+  devices: "auto"       # "auto", [0, 1], 1, or 1 for CPU
+  accelerator: "auto"   # "auto", "gpu", "cpu"
+  strategy: "ddp"       # "ddp" for multi-gpu, "auto" for single-gpu/cpu
+  max_epochs: 150
+  precision: "16-mixed"
+  log_every_n_steps: 10
+  checkpoint_path: "checkpoints"

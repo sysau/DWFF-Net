@@ -1,0 +1,16 @@
+_background_
+arbor-shrub-grass compound land
+dry land
+grass belt
+scattered trees
+dirt road
+paved road
+forest belt
+woody area
+unused land
+paddy field
+ridge
+construction land
+river
+tidal flats
+water
