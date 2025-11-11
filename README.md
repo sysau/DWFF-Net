@@ -192,4 +192,4 @@ If you find this work useful in your research, please cite our paper:
 
 ## Acknowledgements
 
-This work was supported by [Funding Agency/Institution]. We thank the authors of DINOv3 for releasing their pre-trained models. We also thank the contributors of the open-source libraries used in this project.
+This work was supported by [Scientific Research Fund of Liaoning Provincial Education Department of China under [Grant number LJ212510157036].]. We thank the authors of DINOv3 for releasing their pre-trained models. We also thank the contributors of the open-source libraries used in this project.
