@@ -183,10 +183,13 @@ If you find this work useful in your research, please cite our paper:
 
 ```bibtex
 @article{zheng2025dwffnet,
-  title={A Method for Identifying Farmland System Habitat Types Based on the Dynamic-Weighted Feature Fusion Network Model},
-  author={Zheng, Kesong and Song, Zhi and Li, Peizhou and Yao, Shuyi and Bian, Zhenxing},
-  journal={TODO},
-  year={2025}
+      title={A Method for Identifying Farmland System Habitat Types Based on the Dynamic-Weighted Feature Fusion Network Model}, 
+      author={Kesong Zheng and Zhi Song and Peizhou Li and Shuyi Yao and Zhenxing Bian},
+      year={2025},
+      eprint={2511.11659},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2511.11659}, 
 }
 ```
 
